@@ -1,0 +1,21 @@
+how install Helm in kubernetes
+we go us kubernetes ( ec2-ubuntu)
+ 
+and go in site Helm
+https://helm.sh/
+and download Helm
+
+press us tarminal this command
+wget https://get.helm.sh/helm-v3.9.4-linux-amd64.tar.gz
+
+now we extract file
+
+tar -xf helm-v3.9.4-linux-amd64.tar.gz
+
+now we check in us file if we have Helm
+
+now we move it to /bin/
+
+sudo mv helm /bin/
+
+and press helm and check if work
