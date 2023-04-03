@@ -91,5 +91,20 @@ kubectl exec -it (*name*) bash
 kubectl apply -f myfile.yml
 kubectl delete -f myfile.yml
 
+kubectl get deployments
+kubectl get rs
+kubectl create deployments (*name*) --image httpd:latest
+kubectl describe deployments (*name*)
+kubectl scale deployments (*name*) --replicas 4
+kubectl autoscale deployments (*name*) --min=10 --max=15 --cpu-percent=80
+kibectl get hpa
+
+kubectl set image deployments/denis-deployments (*name docker*) --record
+kubectl rollout status deployments/denis-deployments
+kubectl rollout history deployments/denis-deployments
+kubectl rollout undo deployments/denis-deployments
+kubectl rollout undo deployments/denis-deployments --to-revision=2
+kubectl rollout restart deployments/denis-deployments
+kubectl delete deployments/denis-deployments
 
 
