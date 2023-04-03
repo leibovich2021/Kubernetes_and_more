@@ -7,7 +7,13 @@ Cluster
 1.Worker Node
 
 2.Master Node
-
+----------------------------------------------
+Pod = 1 or more Containers
+Deployment = same Pods for Auto Scaling
+Service = access to Deployment with : ClusterIP / NodePort / LoadBalancer / ExternalName
+Nodes = Servers
+Cluster = a collection of nodes
+----------------------------------------------
 
 
 =================================
