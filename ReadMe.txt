@@ -81,6 +81,15 @@ kubectl version --client
 kubectl cluster-info
 kubectl get nodes
 kubectl get pods
+kubectl run (*name pod*) --generator=run-pod/v1 --image=nginx:latest --port=80
+kubectl port-forward (*name*) 1234:80
+kubectl describe pods (*name*)
+kubectl delete pods (*name*)
+kubectl logs (*name*)
+kubectl exec (*name) date
+kubectl exec -it (*name*) bash
+kubectl apply -f myfile.yml
+kubectl delete -f myfile.yml
 
 
 
